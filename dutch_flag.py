@@ -14,7 +14,7 @@ from vloed import PixelVloedClient, NewMessage, RGBPixel, MAX_PIXELS
 def BlueFill(message, width, height):
   """Generates a random number of pixels with a random color"""
   for pixel in xrange(0, random.randint(140, MAX_PIXELS)):
-    pixel = RGBPixel(random.randint(0, 683),
+    pixel = RGBPixel(random.randint(0, 1366),
                      random.randint(height*2/3, height),
                      random.randint(0, 0),
                      random.randint(0, 0),
@@ -29,7 +29,7 @@ def BlueFill(message, width, height):
 def RedFill(message, width, height):
   """Generates a random number of pixels with a random color"""
   for pixel in xrange(0, random.randint(140, MAX_PIXELS)):
-    pixel = RGBPixel(random.randint(0, 683),
+    pixel = RGBPixel(random.randint(0, 1366),
                      random.randint(0, height/3),
                      random.randint(255, 255),
                      random.randint(0, 0),
@@ -44,7 +44,7 @@ def RedFill(message, width, height):
 def WhiteFill(message, width, height):
   """Generates a random number of pixels with a random color"""
   for pixel in xrange(0, random.randint(140, MAX_PIXELS)):
-    pixel = RGBPixel(random.randint(0, 683),
+    pixel = RGBPixel(random.randint(0, 1366),
                      random.randint(height/3, (height*2/3)),
                      random.randint(255, 255),
                      random.randint(255, 255),
